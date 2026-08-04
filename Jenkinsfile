@@ -12,6 +12,7 @@ podTemplate(yaml: readTrusted('pod.yaml')) {
         }
         stage('image build') {
             container('buildkit') {
+                sh """
                     buildctl --addr tcp://buildkitd.devops-tools.svc.cluster.local:1234\
                     --tlscacert /certs/ca.pem\
                     --tlscert /certs/cert.pem\
@@ -20,7 +21,7 @@ podTemplate(yaml: readTrusted('pod.yaml')) {
                     --opt filename=Dockerfile --local context=.\
                     --local dockerfile=.\
                     --output type=image,name=134448505602.dkr.ecr.ap-south-1.amazonaws.com/retail-store-ui,push=true
-
+                """
             }
         }
     }
