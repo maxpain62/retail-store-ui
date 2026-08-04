@@ -19,7 +19,7 @@ spec:
           mountPath: /root/.docker
         - name: certs
           mountPath: /certs
-    - name: maven
+    - name: java-build
       image: eclipse-temurin:21.0.11_10-jdk-resolute
       command:
         - cat

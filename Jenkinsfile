@@ -4,7 +4,7 @@ podTemplate(yaml: readTrusted('pod.yaml')) {
             git branch: 'main', url: 'https://github.com/maxpain62/retail-store-ui.git'
         }
         stage('build') {
-            container('jdk-21') {
+            container('java-build') {
                 sh '''
                 ./mvnw clean package
                 '''
