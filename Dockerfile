@@ -72,4 +72,4 @@ COPY target/ui-0.0.1-SNAPSHOT.jar /ui.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["sh", "-c", "java -jar /app/ui.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar ./ui.jar"]
