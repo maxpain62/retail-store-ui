@@ -45,4 +45,4 @@ spec:
             - configMapRef:
                 name: {{ .Values.metadata.labels.app }}-configmap
       imagePullSecrets:
-        - name: ecr-private-secret
+        - name: ecr-cred
