@@ -10,4 +10,5 @@ spec:
   ports:
     - port: {{ .Values.containers.ports.containerPort }}
       targetPort: {{ .Values.containers.ports.containerPort }}
+      nodePort: 30002
   type: NodePort
