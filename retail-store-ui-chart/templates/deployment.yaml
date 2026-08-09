@@ -42,11 +42,11 @@ spec:
             - containerPort: {{ .Values.containers.ports.containerPort }}
               protocol: TCP
           env:
-            name: AWS_REGION
-            valueFrom:
-              configMapKeyRef:
-                name: retail-store-ui-configmap
-                key: RETAIL_UI_CHAT_BEDROCK_REGION
+            - name: AWS_REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: retail-store-ui-configmap
+                  key: RETAIL_UI_CHAT_BEDROCK_REGION
           envFrom:
             - configMapRef:
                 name: {{ .Values.metadata.labels.app }}-configmap
