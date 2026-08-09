@@ -30,6 +30,7 @@ spec:
               port: {{ .Values.containers.ports.containerPort }}
             initialDelaySeconds: 120
             periodSeconds: 20
+            timeoutSeconds: 5
             failureThreshold: 5     
           readinessProbe:
             httpGet:
@@ -37,6 +38,7 @@ spec:
               port: {{ .Values.containers.ports.containerPort }}
             initialDelaySeconds: 120
             periodSeconds: 20
+            timeoutSeconds: 5
             failureThreshold: 5          
           ports:
             - containerPort: {{ .Values.containers.ports.containerPort }}
