@@ -6,9 +6,9 @@ metadata:
     app: {{ .Values.metadata.labels.app }}
 data:
   RETAIL_UI_THEME: default
-  RETAIL_UI_ENDPOINTS_CATALOG: http://retail-store-catalog-service
-  RETAIL_UI_ENDPOINTS_CARTS: http://retail-store-cart-service
-  RETAIL_UI_ENDPOINTS_CHECKOUT: http://retail-store-checkout-service
+  RETAIL_UI_ENDPOINTS_CATALOG: http://retail-store-catalog-service:8080
+  RETAIL_UI_ENDPOINTS_CARTS: http://retail-store-cart-service:8080
+  RETAIL_UI_ENDPOINTS_CHECKOUT: http://retail-store-checkout-service:8080
   RETAIL_UI_ENDPOINTS_ORDERS: http://retail-store-orders-service:8080
   RETAIL_UI_SEARCH_ENABLED: "false"
   RETAIL_UI_CHAT_BEDROCK_REGION: ap-south-1
