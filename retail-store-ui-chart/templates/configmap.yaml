@@ -7,7 +7,7 @@ metadata:
 data:
   RETAIL_UI_THEME: default
   RETAIL_UI_ENDPOINTS_CATALOG: http://retail-store-catalog-service
-  RETAIL_UI_ENDPOINTS_CARTS: http://retail-store-carts-service
+  RETAIL_UI_ENDPOINTS_CARTS: http://retail-store-cart-service
   RETAIL_UI_ENDPOINTS_CHECKOUT: http://retail-store-checkout-service
   RETAIL_UI_ENDPOINTS_ORDERS: http://retail-store-orders-service
   RETAIL_UI_SEARCH_ENABLED: "false"
