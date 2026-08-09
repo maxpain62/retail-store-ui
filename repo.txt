@@ -1,0 +1,5 @@
+https://github.com/maxpain62/retail-store-orders.git
+https://github.com/maxpain62/retail-store-cart.git
+https://github.com/maxpain62/retail-store-catalog.git
+https://github.com/maxpain62/retail-store-checkout.git
+https://github.com/maxpain62/retail-store-ui.git
